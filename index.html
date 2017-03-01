@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Ryan Schlachter</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="functions.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="mobile-nav flex flex--center">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+      </div>
+      <header>
+        <div class="header-position">
+
+        <h1 class="logo">RS</h1>
+
+          <nav class="desktop-nav">
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!--Empty div for structure -->
+          <div class="extra"></div>
+          <div class="mobile-nav-toggle"><span></span></div>
+      </div>
+    </header>
+
+      <div class="content-sections">
+
+        <section id="home" class="home lato">
+          <div class="flex flex--center">
+            <div class="col-1">
+            <h2>Hello. I'm Ryan and I like to code.</h2>
+            <p>Seeking Junior Web Developer position.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="about lato">
+          <div class="flex flex--center">
+            <div class="col-1">
+              <h2>Eager to learn and grow with a passion for building beautiful, high quality web sites.
+                Outside of work I have a beautiful wife and dog.</h2>
+              <p>Currently looking for a Junior Web Developer position to hit the ground running.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="portfolio" class="portfolio lato">
+          <div class="flex flex--column flex--align port-col">
+              <div class="col-2">
+                <h2>Check out my work.</h2>
+              </div>
+
+              <div class="col-2">
+                  <a href="sites/adawpt/index.html"><img class="web-thumb" src="img/adawpt.png"></a>
+                  <a href="sites/elitefitness/index.html"><img class="web-thumb" src="img/elitefitness.png"></a>
+                  <a href="sites/escapesspa/index.html"><img class="web-thumb" src="img/escapesspa.png"></a>
+                  <a href="sites/tothetop/index.html"><img class="web-thumb" src="img/tothetop.png"></a>
+                <div class="clear"></div>
+              </div>
+
+              <button href="" class="git-button">View on GitHub</button>
+          </div>
+        </section>
+
+        <section id="skills" class="skills lato">
+          <div class="flex flex--center">
+            <div class="col-1">
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>PHP</li>
+                <li>JavaScript</li>
+              </ul>
+              <p>I am confident I will be an excellent addition to your organization.</p>
+            </div>
+          </div>
+        </section>
+        <div id="google-container" class="google-container lato flex flex--column">
+          <h2>If all else fails...</h2>
+          <p>Google search skills</p>
+          <div id="google-bar" class="google-bar">
+            <div id="bar-label" class="bar-label">10%</div>
+          </div>
+        </div>
+
+
+        <section id="contact" class="contact lato">
+          <div class="flex flex--center">
+            <div class="col-1">
+              <form class="contact-form" action="contact.php" method="post">
+                <h3>Contact Me</h3>
+                <input name="name" placeholder="Name" type="text" required><br>
+                <input name="email" placeholder="Email" type="email" required><br>
+                <textarea name="message" placeholder="Message" required></textarea><br>
+                <button name="submit" value="Send email" type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+  </div>
+  </body>
+</html>
